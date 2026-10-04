@@ -10,6 +10,37 @@ interface AboutProps {
 export default function About({ onBackToWork }: AboutProps) {
   const [activePrinciple, setActivePrinciple] = useState(0);
 
+  const primaryDisciplines = [
+    "FRONTEND DEVELOPMENT",
+    "BACKEND DEVELOPMENT",
+    "API DEVELOPMENT",
+    "DATABASE DESIGN",
+    "REAL-TIME APPLICATIONS",
+    "MICROSERVICE ARCHITECTURE",
+  ];
+
+  const supportedStack = [
+    "JAVASCRIPT",
+    "NODE.JS",
+    "REACT.JS",
+    "NEXT.JS",
+    "EXPRESS.JS",
+    "MONGODB",
+    "MONGOOSE",
+    "POSTGRESQL",
+    "SEQUELIZE",
+    "REDUX",
+    "SOCKET.IO",
+    "TAILWIND CSS",
+    "DOCKER",
+    "KUBERNETES",
+    "AWS",
+    "GITHUB ACTIONS",
+    "RABBITMQ",
+  ];
+
+  const focusAreas = ["PRODUCTS", "SYSTEMS", "INTERFACES"];
+
   const principles = [
     {
       step: "01",
@@ -58,7 +89,7 @@ export default function About({ onBackToWork }: AboutProps) {
           </div>
         </div>
 
-        {/* Identity & Statement */}
+        {/* Identity & Professional Description */}
         <div className="pt-6 sm:pt-8 pb-4">
           <div className="flex items-start justify-between gap-4">
             <h2 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-normal text-[#111110] tracking-tight leading-none">
@@ -79,27 +110,20 @@ export default function About({ onBackToWork }: AboutProps) {
             {BUILD_SHEET_META.role}
           </p>
 
-          <p className="font-serif text-xl sm:text-2xl text-[#111110] font-normal italic leading-relaxed max-w-xl mt-6">
-            &ldquo;{BUILD_SHEET_META.tagline}&rdquo;
+          <p className="font-mono text-xs sm:text-sm text-[#3A3834] leading-relaxed max-w-xl mt-6">
+            I’m a MERN Stack Developer focused on building practical web applications with JavaScript, Node.js, React.js, and MongoDB. I work across frontend interfaces, backend APIs, databases, real-time features, and application architecture.
           </p>
         </div>
 
         {/* Two-Column Technical Capabilities & Supported Tech */}
         <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 sm:gap-8 py-6 border-t border-[#CFCAC0] mt-4">
-          {/* Capabilities */}
+          {/* Primary Disciplines */}
           <div className="sm:col-span-7">
             <h4 className="font-mono text-xs tracking-widest text-[#111110] uppercase font-medium mb-3">
               PRIMARY DISCIPLINES
             </h4>
             <div className="space-y-2">
-              {[
-                "FULL-STACK WEB APPLICATIONS",
-                "REAL-TIME SYSTEMS & WEBSOCKETS",
-                "DATABASE SCHEMA & DATA MODELING",
-                "CLIENT-SIDE STATE & ARCHITECTURE",
-                "RESPONSIVE TECHNICAL INTERFACES",
-                "CONTAINERIZED WORKFLOWS",
-              ].map((item, idx) => (
+              {primaryDisciplines.map((item, idx) => (
                 <div key={idx} className="flex items-baseline gap-3 text-[#6E6B65]">
                   <span className="text-[11px] text-[#8C8880] shrink-0">
                     {String(idx + 1).padStart(2, "0")}
@@ -117,8 +141,8 @@ export default function About({ onBackToWork }: AboutProps) {
             <h4 className="font-mono text-xs tracking-widest text-[#111110] uppercase font-medium mb-3">
               SUPPORTED STACK
             </h4>
-            <div className="space-y-1.5">
-              {BUILD_SHEET_META.techStack.map((tech) => (
+            <div className="space-y-1.5 max-h-[260px] overflow-y-auto pr-1">
+              {supportedStack.map((tech) => (
                 <div
                   key={tech}
                   className="text-xs font-mono uppercase tracking-wider text-[#3A3834]"
@@ -133,7 +157,7 @@ export default function About({ onBackToWork }: AboutProps) {
         {/* Categories Bar */}
         <div className="flex items-center gap-4 py-4 border-t border-b border-[#CFCAC0] my-2 text-xs font-mono text-[#6E6B65]">
           <span className="text-[#111110] uppercase font-medium">FOCUS:</span>
-          {BUILD_SHEET_META.categories.map((cat, idx) => (
+          {focusAreas.map((cat, idx) => (
             <React.Fragment key={cat}>
               {idx > 0 && <span className="text-[#CFCAC0]">/</span>}
               <span className="tracking-widest uppercase text-[#3A3834]">{cat}</span>

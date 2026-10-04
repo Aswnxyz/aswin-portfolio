@@ -107,7 +107,7 @@ export default function Contact({ onBackToWork }: ContactProps) {
                   GITHUB
                 </div>
                 <div className="font-mono text-xs text-[#6E6B65] mt-0.5">
-                  github.com/aswin-a
+                  github.com/Aswnxyz
                 </div>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function Contact({ onBackToWork }: ContactProps) {
                   LINKEDIN
                 </div>
                 <div className="font-mono text-xs text-[#6E6B65] mt-0.5">
-                  linkedin.com/in/aswin-a
+                  linkedin.com/in/aswin-a-dev
                 </div>
               </div>
             </div>
@@ -141,6 +141,53 @@ export default function Contact({ onBackToWork }: ContactProps) {
               className="px-3 py-1.5 border border-[#CFCAC0] text-[11px] font-mono uppercase tracking-wider text-[#111110] hover:bg-[#E2DDD3] transition-colors"
             >
               CONNECT ↗
+            </a>
+          </div>
+
+          {/* Fiverr Channel */}
+          <div className="flex items-center justify-between p-3.5 border border-[#CFCAC0] hover:border-[#B85D2A] transition-colors bg-[#E6E1D6]/30">
+            <div className="flex items-baseline gap-3">
+              <span className="text-[11px] text-[#8C8880]">04</span>
+              <div>
+                <div className="font-mono text-xs uppercase tracking-widest text-[#111110] font-medium">
+                  FIVERR
+                </div>
+                <div className="font-mono text-xs text-[#6E6B65] mt-0.5">
+                  Freelance Contracts &amp; Services
+                </div>
+              </div>
+            </div>
+            <a
+              href={BUILD_SHEET_META.contact.fiverr}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1.5 border border-[#CFCAC0] text-[11px] font-mono uppercase tracking-wider text-[#111110] hover:bg-[#E2DDD3] transition-colors"
+            >
+              FIVERR ↗
+            </a>
+          </div>
+
+          {/* Resume Download / Open Channel */}
+          <div className="flex items-center justify-between p-3.5 border border-[#CFCAC0] hover:border-[#B85D2A] transition-colors bg-[#E6E1D6]/30">
+            <div className="flex items-baseline gap-3">
+              <span className="text-[11px] text-[#8C8880]">05</span>
+              <div>
+                <div className="font-mono text-xs uppercase tracking-widest text-[#111110] font-medium">
+                  RESUME / CV
+                </div>
+                <div className="font-mono text-xs text-[#6E6B65] mt-0.5">
+                  Curriculum Vitae (PDF Document)
+                </div>
+              </div>
+            </div>
+            <a
+              href="/resume.pdf"
+              download="Aswin_A_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1.5 border border-[#111110] bg-[#111110] text-[#EBE8DF] text-[11px] font-mono uppercase tracking-wider hover:bg-[#B85D2A] hover:border-[#B85D2A] transition-colors"
+            >
+              DOWNLOAD RESUME ↗
             </a>
           </div>
         </div>
