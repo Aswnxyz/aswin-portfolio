@@ -14,9 +14,10 @@ export default function About({ onBackToWork }: AboutProps) {
     "FRONTEND DEVELOPMENT",
     "BACKEND DEVELOPMENT",
     "API DEVELOPMENT",
-    "DATABASE DESIGN",
+    "DATABASE & DATA MANAGEMENT",
     "REAL-TIME APPLICATIONS",
     "MICROSERVICE ARCHITECTURE",
+    "AI & MCP INTEGRATION"
   ];
 
   const supportedStack = [
@@ -25,6 +26,7 @@ export default function About({ onBackToWork }: AboutProps) {
     "REACT.JS",
     "NEXT.JS",
     "EXPRESS.JS",
+    "TYPESCRIPT",
     "MONGODB",
     "MONGOOSE",
     "POSTGRESQL",
@@ -37,6 +39,9 @@ export default function About({ onBackToWork }: AboutProps) {
     "AWS",
     "GITHUB ACTIONS",
     "RABBITMQ",
+    "REST",
+    "RPC",
+    "MICROSERVICES",
   ];
 
   const focusAreas = ["PRODUCTS", "SYSTEMS", "INTERFACES"];
@@ -77,7 +82,9 @@ export default function About({ onBackToWork }: AboutProps) {
             / ABOUT / {BUILD_SHEET_META.name}
           </span>
           <div className="flex items-center gap-3">
-            <span className="text-[#6E6B65] tracking-widest">SPECIFICATION</span>
+            <span className="text-[#6E6B65] tracking-widest">
+              SPECIFICATION
+            </span>
             {onBackToWork && (
               <button
                 onClick={onBackToWork}
@@ -111,7 +118,10 @@ export default function About({ onBackToWork }: AboutProps) {
           </p>
 
           <p className="font-mono text-xs sm:text-sm text-[#3A3834] leading-relaxed max-w-xl mt-6">
-            I’m a MERN Stack Developer focused on building practical web applications with JavaScript, Node.js, React.js, and MongoDB. I work across frontend interfaces, backend APIs, databases, real-time features, and application architecture.
+            I’m a Full-Stack Developer focused on building practical web
+            applications and digital products. I work across frontend
+            interfaces, backend systems, APIs, databases, real-time features,
+            and application architecture.{" "}
           </p>
         </div>
 
@@ -124,7 +134,10 @@ export default function About({ onBackToWork }: AboutProps) {
             </h4>
             <div className="space-y-2">
               {primaryDisciplines.map((item, idx) => (
-                <div key={idx} className="flex items-baseline gap-3 text-[#6E6B65]">
+                <div
+                  key={idx}
+                  className="flex items-baseline gap-3 text-[#6E6B65]"
+                >
                   <span className="text-[11px] text-[#8C8880] shrink-0">
                     {String(idx + 1).padStart(2, "0")}
                   </span>
@@ -160,7 +173,9 @@ export default function About({ onBackToWork }: AboutProps) {
           {focusAreas.map((cat, idx) => (
             <React.Fragment key={cat}>
               {idx > 0 && <span className="text-[#CFCAC0]">/</span>}
-              <span className="tracking-widest uppercase text-[#3A3834]">{cat}</span>
+              <span className="tracking-widest uppercase text-[#3A3834]">
+                {cat}
+              </span>
             </React.Fragment>
           ))}
         </div>
@@ -190,7 +205,9 @@ export default function About({ onBackToWork }: AboutProps) {
                     : "border-[#CFCAC0] text-[#6E6B65] hover:border-[#111110] hover:text-[#111110] bg-transparent"
                 }`}
               >
-                <div className="font-mono text-[10px] text-[#8C8880]">{p.step}</div>
+                <div className="font-mono text-[10px] text-[#8C8880]">
+                  {p.step}
+                </div>
                 <div className="font-mono text-xs uppercase tracking-wider font-medium">
                   {p.phase}
                 </div>
