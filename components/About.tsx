@@ -17,7 +17,7 @@ export default function About({ onBackToWork }: AboutProps) {
     "DATABASE & DATA MANAGEMENT",
     "REAL-TIME APPLICATIONS",
     "MICROSERVICE ARCHITECTURE",
-    "AI & MCP INTEGRATION"
+    "MCP INTEGRATION"
   ];
 
   const supportedStack = [
@@ -29,14 +29,11 @@ export default function About({ onBackToWork }: AboutProps) {
     "TYPESCRIPT",
     "MONGODB",
     "MONGOOSE",
-    "POSTGRESQL",
-    "SEQUELIZE",
     "REDUX",
     "SOCKET.IO",
     "TAILWIND CSS",
     "DOCKER",
     "KUBERNETES",
-    "AWS",
     "GITHUB ACTIONS",
     "RABBITMQ",
     "REST",
@@ -57,19 +54,19 @@ export default function About({ onBackToWork }: AboutProps) {
       step: "02",
       phase: "SYSTEM",
       description:
-        "Architect clean relational/document data models, low-latency event flows, and predictable state transitions.",
+        "Design clear document data models, event flows, and predictable state transitions.",
     },
     {
       step: "03",
       phase: "BUILD",
       description:
-        "Write typed, accessible, and maintainable software with sharp typography and zero gratuitous dependencies.",
+        "Write typed, accessible, and maintainable software with clear interfaces and considered dependencies.",
     },
     {
       step: "04",
       phase: "SHIP",
       description:
-        "Deliver fast, resilient production artifacts optimized for performance, uptime, and real-world utility.",
+        "Validate builds, workflows, and deployment configuration against the needs of each project.",
     },
   ];
 
@@ -225,3 +222,4 @@ export default function About({ onBackToWork }: AboutProps) {
     </div>
   );
 }
+

@@ -105,10 +105,8 @@ export const PROJECTS: Project[] = [
       "SOCKET.IO",
       "DOCKER",
       "KUBERNETES",
-      "AWS S3",
       "CLOUDINARY",
     ],
-    liveUrl: "https://zoro-platform.vercel.app",
     githubUrl: "https://github.com/Aswnxyz/Project_ZORO-social-network-for--bikers.git",
     buildProcess: [
       {
@@ -129,7 +127,7 @@ export const PROJECTS: Project[] = [
       {
         step: "04",
         phase: "SHIP",
-        description: "Containerize the services with Docker and deploy the system to Kubernetes with automated service builds and rollouts.",
+        description: "Prepare Docker, Kubernetes, Skaffold, and GitHub Actions configuration for service builds and deployment workflows.",
       },
     ],
   },
@@ -192,9 +190,9 @@ export const PROJECTS: Project[] = [
     status: "BUILT",
     year: "2025",
     subtitle: "E-COMMERCE PLATFORM",
-    description: "Full-stack e-commerce platform with product management, payments, orders, and customer workflows.",
+    description: "Server-rendered e-commerce portfolio project with product management, payments, orders, and customer workflows.",
     features: [
-      "PRODUCT & VARIANT MANAGEMENT",
+      "PRODUCT & INVENTORY MANAGEMENT",
       "SEARCH & PRODUCT FILTERING",
       "CART & WISHLIST",
       "ORDERS & RETURNS",
@@ -209,22 +207,20 @@ export const PROJECTS: Project[] = [
       "MONGOOSE",
       "RAZORPAY",
       "MULTER",
-      "CLOUDINARY",
       "NODEMAILER",
       "PDFKIT",
     ],
-    liveUrl: "https://shopzen-store.vercel.app",
     githubUrl: "https://github.com/Aswnxyz/Project_ShopZen.git",
     buildProcess: [
       {
         step: "01",
         phase: "IDEA",
-        description: "Build a complete e-commerce platform covering the core journey from product discovery to payment and order management.",
+        description: "Explore the core e-commerce journey from product discovery to payment and order management.",
       },
       {
         step: "02",
         phase: "SYSTEM",
-        description: "Structure customer and admin workflows around products, variants, authentication, cart, wishlist, orders, payments, and inventory management.",
+        description: "Structure customer and admin workflows around products, attributes, authentication, cart, wishlist, orders, payments, and inventory management.",
       },
       {
         step: "03",
@@ -234,7 +230,7 @@ export const PROJECTS: Project[] = [
       {
         step: "04",
         phase: "SHIP",
-        description: "Connect the customer and admin experiences into a complete web application with session-based authentication and integrated payment and order workflows.",
+        description: "Connect customer and admin experiences with session-based authentication and integrated payment and order workflows.",
       },
     ],
   },
@@ -252,7 +248,6 @@ export const BUILD_SHEET_META = {
     "TYPESCRIPT",
     "NODE.JS",
     "MONGODB",
-    "POSTGRESQL",
     "SOCKET.IO",
     "TAILWIND CSS",
     "DOCKER",
@@ -269,3 +264,4 @@ export const BUILD_SHEET_META = {
     year: "2026",
   },
 };
+
